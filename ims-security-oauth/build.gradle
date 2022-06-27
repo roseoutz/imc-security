@@ -16,6 +16,7 @@ ext{
     artifactId = 'ims-security-oauth'
     springSecurityVersion = '5.7.2'
     reactorVersion = '3.4.19'
+    imsSecurityVersion = '0.0.1-SNAPSHOT'
 }
 
 jar {
@@ -39,6 +40,8 @@ publishing {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-security")
+
+    implementation project(":ims-security-common")
 }
 
 tasks.named('test') {

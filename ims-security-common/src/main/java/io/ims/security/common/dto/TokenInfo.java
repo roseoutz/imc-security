@@ -3,7 +3,9 @@ package io.ims.security.common.dto;
 import io.ims.security.common.constant.TokenAlgType;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
+import java.security.Key;
 import java.security.PublicKey;
 
 /**
@@ -18,13 +20,14 @@ import java.security.PublicKey;
  * 2022/06/27        kimdonggyuuuuu       최초 생성
  */
 @Getter
-@Builder
+@RequiredArgsConstructor
+@Builder(toBuilder = true)
 public class TokenInfo {
 
     private final String token;
     private TokenAlgType tokenAlgType;
-    private PublicKey publicKey;
+    private final PublicKey publicKey;
     private String kid;
-
+    private Key signKey;
 
 }

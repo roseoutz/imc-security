@@ -66,9 +66,9 @@ subprojects {
     }
 
     dependencies {
-        implementation "io.ims.cm:ims-cm-common:${imsVersion}"
+        implementation ("io.ims.cm:ims-cm-common:${imsVersion}")
 
-        implementation "javax.annotation:javax.annotation-api:${javaxAnnotationApi}"
+        implementation ("javax.annotation:javax.annotation-api:${javaxAnnotationApi}")
 
         compileOnly "org.projectlombok:lombok:${lombokVersion}"
 

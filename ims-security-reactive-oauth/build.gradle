@@ -38,7 +38,7 @@ publishing {
 
 
 dependencies {
-    implementation("io.ims.security:ims-security-oauth:${imsSecurtiyVersion}")
+    implementation project(":ims-security-oauth")
 
     implementation "io.projectreactor:reactor-core:${reactorVersion}"
     implementation("org.springframework.boot:spring-boot-starter-security")
