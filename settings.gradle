@@ -1,0 +1,5 @@
+rootProject.name = 'ims-security'
+include 'ims-security-oauth'
+include 'ims-security-reactive-oauth'
+include 'ims-security-common'
+
