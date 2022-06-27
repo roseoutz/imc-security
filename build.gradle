@@ -33,7 +33,7 @@ subprojects {
     sourceCompatibility = 11
     targetCompatibility = 11
 
-    group = 'io.ims'
+    group = 'io.ims.security'
     version = '0.0.1-SNAPSHOT'
 
     ext{
